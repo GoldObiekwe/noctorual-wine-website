@@ -1,12 +1,10 @@
-/* Set the height of the body and html to 100% to ensure the background image covers the entire viewport */
 body, html {
     height: 100%;
     margin: 0;
 }
 
-/* Style for the hero section to set the background image and center the text */
 .hero-section {
-    background: url('./IMAGES/front-view-empty-wineglass-with-bottle-wine-dark-background-color-wine-alcohol-celebration-holiday-restaurant_140725-158046.png') no-repeat center center;
+    background: url('/IMAGES/front-view-empty-wineglass-with-bottle-wine-dark-background-color-wine-alcohol-celebration-holiday-restaurant_140725-158046.png') no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -15,100 +13,55 @@ body, html {
     text-align: center;
 }
 
-/* Style for the text in the hero section */
 .hero-text {
     color: rosybrown;
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
 }
 
-/* Make the navbar background transparent */
 .navbar {
-    background: transparent !important;
+    background-color: transparent !important;
+    border: none;
     position: absolute;
     width: 100%;
     z-index: 1;
-    
 }
 
-/* Style for the navigation links */
 .navbar-nav .nav-link {
-    color: rgb(225, 155, 155) !important;
+    color: rosybrown !important;
     font-size: 1.2em;
     padding: 0.5em 1em;
 }
 
-/* Add underline on hover for navigation links */
 .navbar-nav .nav-link:hover {
-    border-bottom: 2px solid peachpuff;
+    border-bottom: 2px solid rosybrown;
 }
 
-/* Style for the button in the navbar */
 .nav-btn {
     border-radius: 50px;
-    background-color: rgb(225, 155, 155);
-    color: rgb(225, 155, 155);  /* Fixed the color to make the button text visible */
+    background-color: rosybrown;
+    color: rgba(255, 255, 255, 0.678);
     font-size: 1.2em;
 }
 
-/* Style for the SVG logo in the navbar */
-.navbar-brand svg {
-    fill: rgb(225, 155, 155);
+.navbar-brand {
+    color: rosybrown !important;
+    font-size: 1.5em;
 }
 
+.navbar-brand svg {
+    fill: rosybrown;
+}
 
-
-
-
-
-
-
- <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
-        .hero-section {
-            background: url('/IMAGES/front-view-empty-wineglass-with-bottle-wine-dark-background-color-wine-alcohol-celebration-holiday-restaurant_140725-158046.png') no-repeat center center;
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .hero-text {
-            color:  rosybrown;
-            font-size: 3em;
-            font-weight: bold;
-        }
-        .navbar {
-            background-color: rgb(7, 7, 7) !important;
-        }
-        .navbar-nav .nav-link {
-            color:  rosybrown !important;
-            font-size: 1.2em;
-            padding: 0.5em 1em;
-        }
-        .navbar-nav .nav-link:hover {
-            border-bottom: 2px solid rosybrown;
-        }
-        .nav-btn {
-            border-radius: 50px;
-            background-color: rosybrown;
-            color: rgba(255, 255, 255, 0.678);
-            font-size: 1.2em;
-        }
-        .navbar-brand svg {
-            fill:  rosybrown;
-        }
-
-        .navbar-brand {
-            color: rosybrown !important;
-            font-size: 1.5em;
-        }
-        .navbar-brand svg {
-            fill: rosybrown;
-        }
-    </style>
+/* Responsive design for small screens */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+    .hero-text {
+        font-size: 2em;
+    }
+}
